@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
+import bg from './bg.png'
 import './App.css';
 
 import Start from './components/Start'
@@ -32,10 +33,10 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className="App vh-100">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">QR Eye for the Straight Guy</h1>
         </header>
         {Page}
       </div>

@@ -16,6 +16,7 @@ class Test extends Component {
         result: data,
       })
     }
+    if (data) window.location = data
   }
   handleError(err) {
     console.error(err)
@@ -29,12 +30,14 @@ class Test extends Component {
             onError={this.handleError}
             onScan={this.handleScan}
             style={{
+              margin: '6rem',
               width: '16rem',
               height: '16rem',
               margin: 'auto'
             }}
           />
           <p>{this.state.result}</p>
+
         </div>
         <button className="start-button" onClick={() => this.props.changeView(0)}>
           END

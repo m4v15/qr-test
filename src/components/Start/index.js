@@ -1,14 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import './style.css';
 
-class App extends Component {
+
+class Start extends Component {
   render() {
     return (
       <Fragment>
-        <div className="intro">
-          Welcome to the QR reader
-        </div>
-        <button className="start-button" onClick={() => this.props.changeView(1)}>
+        <button className="f6 link dim br4 h4 w4 ph3 pv2 mt5 mb2 dib white bg-hot-pink" onClick={() => this.props.changeView(1)} >
           BEGIN
         </button>
       </Fragment>
@@ -16,4 +13,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Start;
