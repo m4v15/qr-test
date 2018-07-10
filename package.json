@@ -2,11 +2,14 @@
   "name": "qr-reader",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://m4v15.github.io/qr-reader",
   "dependencies": {
+    "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-qr-reader": "^2.1.0",
     "react-scripts": "1.1.4",
+    "serve": "^9.2.0",
     "surge": "^0.20.1"
   },
   "scripts": {
@@ -14,5 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "now": "^11.2.8"
   }
 }
